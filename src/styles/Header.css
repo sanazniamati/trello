@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(to right, #f2e6ff, #f5f6fa);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+}
+.sign-in-sign-up {
+}
+.sign-in {
+}
+.sign-up {
+}
