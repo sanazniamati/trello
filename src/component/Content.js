@@ -22,7 +22,7 @@ function Content() {
           </form>
           </div>
         <div className="right-content">
-          <img  style={{width:300,height:300}}src={trelloimg} alt="Trello" />
+          <img  style={{width:200,height:200}}src={trelloimg} alt="Trello" />
         </div>
       </div>
     )
