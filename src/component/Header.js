@@ -1,16 +1,25 @@
 import React from 'react'
 import '../styles/Header.css'
+import logo from '../images/trello-logo.png'
 
 function Header() {
     return (
         <div className="header">
-        <div className="logo">Trello</div>
+        <div className="logo">
+          <a href="/home">
+            <img src={logo} alt="trello-logo"/>
+          </a>
+        </div>
         <div className="sign-in-sign-up">
           <div className="sign-in">
-            <button type="submit" className="btn">Sign in</button>
+            <a href="/login">
+              <span>Log in</span>
+            </a>
           </div>
           <div className="sign-up">
-            <button type="submit">Sign up</button>
+            <a href="/sign up">
+              <spa>Sign up</spa>
+            </a>
           </div>
         </div>
       </div>

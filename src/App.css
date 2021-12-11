@@ -1,12 +1,21 @@
 * {
-  padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
+  padding: 0px;
 }
-.container {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(#e5ccff, #f2e6ff);
+.body {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255)) no-repeat;
+  color: rgb(9, 30, 66);
+  scroll-margin-top: 72px;
+  font-family: "Charlie Text", sans-serif;
+  font-size: 20px;
+  min-height: 100vh;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(9, 30, 66);
+  background-color: rgb(255, 255, 255);
+  text-size-adjust: 100%;
+  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
