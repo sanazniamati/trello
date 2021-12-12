@@ -1,21 +1,12 @@
 * ::before ::after {
   box-sizing: border-box;
 }
-/* .content {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 100%;
-  
-} */
 .content {
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
+  /* -webkit-box-align: center; */
   display: flex;
+  align-items: center;
+  /* -webkit-box-pack: start; */
+  justify-content: flex-start;
   flex-direction: row;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -27,10 +18,13 @@
   gap: 2rem;
   padding: 10px 16px 16px;
 }
+.left-content {
+  /* padding: 8rem 1rem 1rem; */
+}
 .right-content {
   padding: 8rem 1rem 1rem;
   position: relative;
-  scroll-margin-top: 72px;
+  /* scroll-margin-top: 72px; */
   text-align: center;
   width: 100%;
 }
