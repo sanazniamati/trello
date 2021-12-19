@@ -69,14 +69,12 @@ function App() {
       </div>
       <div className="content">
         <div className="left-content">
-          <div className="main-content">
-            <h1>Trello helps teams move to work forward </h1>
-            <p>
-              Collaborate, manage projects, and reach new productivity peaks.
-              From high rises to the home office, the way your team works is
-              unique—accomplish it all with Trello.
-            </p>
-          </div>
+          <h1>Trello helps teams move to work forward </h1>
+          <p>
+            Collaborate, manage projects, and reach new productivity peaks. From
+            high rises to the home office, the way your team works is
+            unique—accomplish it all with Trello.
+          </p>
           <form className="input-button">
             <input name="email" type="email" placeholder="Email" />
             <div className="btn-control">
@@ -315,20 +313,20 @@ function App() {
               </p>
             </div>
           </div>
-
-          <div className="check-out-container-col1-col1">
-            <img src={compass}></img>
-          </div>
-          <div className="check-out-container-col1-col2">
-            <h3>Take a Trello tour</h3>
-            <p>
-              Explore the world of boards and beyond in Trello. Dive deeper into
-              our most popular features.
-            </p>
-            <p>
-              {" "}
-              <a href="/tour">Tour Trello</a>{" "}
-            </p>
+          <div className="check-out-container-col2">
+            <div className="check-out-container-col2-col1">
+              <img src={compass}></img>
+            </div>
+            <div className="check-out-container-col2-col2">
+              <h3>Take a Trello tour</h3>
+              <p>
+                Explore the world of boards and beyond in Trello. Dive deeper
+                into our most popular features.
+              </p>
+              <p>
+                <a href="/tour">Tour Trello</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -360,6 +358,7 @@ function App() {
             </div>
           </div>
         </div>
+        <hr />
 
         <ul>
           <li className="arrow" data-direction="back">
@@ -404,12 +403,10 @@ function App() {
         <div className="sign-up-container">
           <div className="sign-up-container-inner-text">
             <div className="inner-text-row1">
-              <div className="inner-text-row1">
-                <h3>
-                  Sign up and get started with Trello today. A world of
-                  productive teamwork awaits!
-                </h3>
-              </div>
+              <h3>
+                Sign up and get started with Trello today. A world of productive
+                teamwork awaits!
+              </h3>
             </div>
             <div className="inner-text-row2">
               <input type="email" placeholder="email"></input>

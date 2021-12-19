@@ -1,19 +1,16 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 .body {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255)) no-repeat;
-
   font-family: "Charlie Text", sans-serif;
   font-size: 20px;
-  /* min-height: 100vh; */
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
-  /* text-size-adjust: 100%; */
 }
 
 .header {
@@ -22,31 +19,29 @@
   justify-content: space-between;
   width: 100%;
   height: 68.25px;
-  position: fixed;
+  /* position: fixed; */
+  z-index: 1;
+  transition: background-color 1s;
+  background-color: rgba(255, 255, 255, 0);
 }
+
 .header-logo {
+  width: 126px;
+  height: 36px;
   margin-left: 20px;
 }
-.header-logo a svg {
-  width: 106px;
-  height: 106px;
-}
-.header a {
-  color: rgb(0, 101, 255);
-}
+
 .header-sign-in-sign-up {
   display: flex;
-  flex-direction: row;
 }
 
 .header-sign-in a,
 .header-sign-in > span {
   align-items: center;
-  border-radius: 0.3rem;
+  border-radius: 1px;
   cursor: pointer;
-  margin-right: 0.75rem;
   font-size: 15px;
-  padding: 0.3rem 0.6rem 0.4rem;
+  padding: 4px 8px;
   text-decoration: none;
 }
 .header-sign-up a,
@@ -59,71 +54,60 @@
   color: #ffffff;
   text-decoration: none;
   font-size: 15px;
-  padding: 0.3rem 0.3rem 0.4rem;
+  padding: 6px 8px;
   margin-right: 20px;
 }
 
 .content {
-  /* -webkit-box-align: center; */
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
-  /* -webkit-box-pack: start; */
-  justify-content: flex-start;
-  flex-direction: row;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 5rem;
+  /*چرا وقتی مارجین لفت میگیره اسکرول میخوره در راستای ایکس*/
+  /* margin-left: 93px; */
+  margin-right: 93px;
+  /* margin-left: 93px; */
+  padding: 15px 70px 15px 80px;
+  margin-top: 80px;
 }
-.main-content {
-  display: grid;
-  align-content: space-between;
-  gap: 2rem;
-  padding: 10px 16px 16px;
-}
-
 .right-content {
-  padding: 8rem 1rem 1rem;
-  position: relative;
-  /* scroll-margin-top: 72px; */
-  text-align: center;
-  width: 100%;
+  /* margin-left: 80px; */
 }
 .right-content img {
-  width: 445px;
-  height: 500px;
+  width: 380px;
+  height: 540px;
 }
+.left-content {
+  box-sizing: border-box;
+  width: 665px;
+  height: 359px;
+  margin-top: 80px;
+}
+
 .input-button {
   display: flex;
-  flex-direction: row;
-  margin-top: 2rem;
+  margin: 48px 0;
 }
 .input-button input[type="email"] {
-  font-size: 1.25rem;
-  padding: 0.4rem 0.75rem 0.5rem;
+  width: 300px;
+  height: 35px;
+  font-size: 15px;
+  padding: 6px 12px;
   border: 1px solid rgb(223, 225, 230);
-  border-radius: 0.3rem;
-  display: block;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  max-width: 376px;
-  width: 376px;
+  border-radius: 6px;
 }
 .btn-control button[type="submit"] {
+  width: 200px;
+  height: 35px;
   align-items: center;
-  border-radius: 0.3rem;
   cursor: pointer;
-  display: inline-flex;
-  transition: all 250ms ease-out 0s;
   background-color: rgb(0, 101, 255);
   border: 1px solid rgb(0, 101, 255);
+  border-radius: 6px;
   text-decoration: none;
-  font-size: 1.25rem;
-  padding: 0.4rem 0.5rem 0.5rem;
+  font-size: 15px;
+  padding: 6px 24px;
+  margin-left: 20px;
 }
-.products {
-  box-sizing: border-box;
-}
+
 .products-container {
   text-align: center;
   padding-right: 15px;
@@ -135,12 +119,11 @@
   width: 850px;
   margin: 0 auto;
   margin-top: 50px;
-  margin-bottom: 20px;
 }
 .products-row1 p {
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 .products-row1-btn {
   text-decoration: none;
@@ -154,24 +137,28 @@
   color: #ffff;
 }
 .products-row2 img {
-  width: 1000px;
+  width: 900px;
   height: 775px;
 }
 .feachers-container {
   padding-right: 15px;
   padding-left: 15px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .feachers-container-row1 {
+  margin-left: 100px;
+  margin-bottom: 80px;
   width: 500px;
 }
 .feachers-container-row2 {
   display: flex;
+  margin-left: 80px;
   margin-top: 40px;
 }
 .feachers-container-row2-col1 {
   width: 445px;
   height: 335px;
+  margin-right: 50px;
 }
 .feachers-container-row2-col2 {
   width: 635px;
@@ -179,12 +166,14 @@
 }
 .feachers-container-row3 {
   display: flex;
+  margin-left: 80px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 .feachers-container-row3-col1 {
   width: 445px;
   height: 335px;
+  margin-right: 20px;
 }
 .feachers-container-row3-col2 img {
   width: 445px;
@@ -192,12 +181,14 @@
 }
 .feachers-container-row4 {
   display: flex;
+  margin-left: 80px;
   margin-top: 50px;
   margin-bottom: 20px;
 }
 .feachers-container-row4-col1 img {
   width: 445px;
   height: 336px;
+  margin-right: 20px;
 }
 .feachers-container-row4-col2 {
   width: 500px;
@@ -206,9 +197,12 @@
 .feachers-container-row5 {
   display: flex;
   margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 80px;
 }
 .feachers-container-row5-col1 {
   width: 500px;
+  margin-right: 20px;
 }
 .feachers-container-row5-col2 img {
   width: 445px;
@@ -216,16 +210,25 @@
 }
 .check-out-container-row {
   display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .check-out-container-col1 {
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 .check-out-container-col2 {
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .customer-stories {
+  margin-top: 50px;
   margin-bottom: 50px;
-  padding-left: 15px;
+  padding-left: 50px;
+  background-color: #bed4f7;
 }
 .frame {
   display: flex;
@@ -244,6 +247,39 @@ ul {
 }
 .dot {
   display: flex;
+}
+.sign-up-container {
+  width: 900px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  background-image: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/sign-up/95ae6a1…/background.svg),
+    linear-gradient(0deg, #4c9aff, #403294 100%);
+}
+.sign-up-container-inner-text {
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.inner-text-row2 {
+  margin-top: 20px;
+}
+.inner-text-row2 input[type="email"] {
+  width: 300px;
+  height: 31px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+.inner-text-row2 button[type="submit"] {
+  width: 184px;
+  height: 35px;
+  color: #fff;
+  background-color: #00b8d9;
+  border-color: #00b8d9;
+  border-radius: 10px;
+  margin-left: 20px;
 }
 .global-footer-list {
   list-style-type: none;
