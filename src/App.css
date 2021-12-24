@@ -8,20 +8,17 @@
   flex-direction: column;
   background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255)) no-repeat;
   font-family: "Charlie Text", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
 }
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 68.25px;
-  /* position: fixed; */
-  z-index: 1;
-  transition: background-color 1s;
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -58,53 +55,68 @@
   margin-right: 20px;
 }
 
-.content {
-  box-sizing: border-box;
+.content-container {
+  /* box-sizing: border-box; */
   display: flex;
-  /*چرا وقتی مارجین لفت میگیره اسکرول میخوره در راستای ایکس*/
-  /* margin-left: 93px; */
+  margin-left: 93px;
   margin-right: 93px;
-  /* margin-left: 93px; */
-  padding: 15px 70px 15px 80px;
-  margin-top: 80px;
+  padding: 112px 15px 80px 15px;
 }
 .right-content {
-  /* margin-left: 80px; */
+  padding: 0 15px;
+  margin: 0px -95px 0px 95px;
 }
 .right-content img {
-  width: 380px;
-  height: 540px;
+  width: 445px;
+  height: 575px;
 }
+
 .left-content {
-  box-sizing: border-box;
-  width: 665px;
-  height: 359px;
-  margin-top: 80px;
+  width: 635px;
+  height: 353px;
+  padding: 0 15px;
+}
+.left-content p {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+.left-content h1 {
+  margin-bottom: 8px;
+  font-size: 48px;
 }
 
 .input-button {
+  width: 665px;
+  height: 45px;
   display: flex;
-  margin: 48px 0;
+  margin: 48px -15px;
 }
-.input-button input[type="email"] {
-  width: 300px;
-  height: 35px;
+.email {
+  width: 364px;
+  height: 45px;
   font-size: 15px;
-  padding: 6px 12px;
+  padding-left: 15px;
+  padding-right: 8px;
+  /* padding: 6px 12px; */
   border: 1px solid rgb(223, 225, 230);
   border-radius: 6px;
 }
-.btn-control button[type="submit"] {
-  width: 200px;
-  height: 35px;
+.submit {
+  width: 254px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 500;
   align-items: center;
   cursor: pointer;
   background-color: rgb(0, 101, 255);
   border: 1px solid rgb(0, 101, 255);
+  color: #ffffff;
   border-radius: 6px;
   text-decoration: none;
   font-size: 15px;
-  padding: 6px 24px;
+  padding-left: 8px;
+  padding-right: 15px;
+  /* padding: 6px 24px; */
   margin-left: 20px;
 }
 
@@ -210,21 +222,34 @@
 }
 .check-out-container-row {
   display: flex;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin: 48px 93px;
+  padding: 24px 15px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
 }
 .check-out-container-col1 {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
   margin-right: 20px;
 }
+
 .check-out-container-col2 {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
-.customer-stories {
+
+.check-out-container-img {
+  padding: 0 15px;
+}
+/* .check-out-container-text {
+  margin-bottom: 50px;
+} */
+.check-out-container-btn {
+  padding: 4px 24px;
+  color: #0065ff;
+  background-color: transparent;
+  border: 1px solid #0065ff;
+  text-decoration: none;
+}
+.customer-stories-container {
   margin-top: 50px;
   margin-bottom: 50px;
   padding-left: 50px;
@@ -281,10 +306,60 @@ ul {
   border-radius: 10px;
   margin-left: 20px;
 }
+.app-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 93px;
+  margin-left: 93px;
+}
+.app-apple-google a img {
+  width: 171px;
+  height: 50px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.select-container {
+  margin-bottom: 20px;
+}
+.select-container select {
+  padding: 8px;
+  border: 2px solid #edeff0;
+  color: #959da1;
+  background-color: rgba(255, 255, 255, 0.5);
+  appearance: none;
+}
+
 .global-footer-list {
   list-style-type: none;
 }
 .global-footer-list-item {
-  margin: 10px;
+  box-sizing: border-box;
+  margin: 0 6.4px;
   display: inline-block;
+}
+.global-footer-list-item-link {
+  color: #8993a4;
+  text-decoration: underline;
+  background-color: transparent;
+  font-size: 15px;
+}
+.global-footer-detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+.global-footer-detail-img {
+  box-sizing: border-box;
+  /* margin: 0 572px; */
+  width: 150px;
+  height: 18.6px;
+  margin-bottom: 20px;
 }

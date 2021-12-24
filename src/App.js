@@ -14,7 +14,7 @@ import atlassianlogo from "./images/atlassian-logo.svg";
 function App() {
   return (
     <div className="body">
-      <div className="header">
+      <header>
         <div className="header-logo">
           <a href="/home">
             <svg
@@ -66,28 +66,36 @@ function App() {
             </a>
           </div>
         </div>
-      </div>
-      <div className="content">
-        <div className="left-content">
-          <h1>Trello helps teams move to work forward </h1>
-          <p>
-            Collaborate, manage projects, and reach new productivity peaks. From
-            high rises to the home office, the way your team works is
-            unique—accomplish it all with Trello.
-          </p>
-          <form className="input-button">
-            <input name="email" type="email" placeholder="Email" />
-            <div className="btn-control">
-              <button type="submit">Sign Up-it's free</button>
-            </div>
-          </form>
+      </header>
+      <section id="content">
+        <div className="content-container">
+          <div className="left-content">
+            <h1>Trello helps teams move to work forward </h1>
+            <p>
+              Collaborate, manage projects, and reach new productivity peaks.
+              From high rises to the home office, the way your team works is
+              unique—accomplish it all with Trello.
+            </p>
+            <form className="input-button">
+              <input
+                className="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+              />
+              <div className="btn-control">
+                <button className="submit" type="submit">
+                  Sign Up-it's free
+                </button>
+              </div>
+            </form>
+          </div>
+          <div className="right-content">
+            <img src={trelloimg} alt="Trello" />
+          </div>
         </div>
-        <div className="right-content">
-          <img src={trelloimg} alt="Trello" />
-        </div>
-      </div>
-
-      <div className="products">
+      </section>
+      <section id="products">
         <div className="products-container">
           <div className="products-row1">
             <h2>It’s more than work. It’s a way of working together.</h2>
@@ -119,7 +127,6 @@ function App() {
                 height="33"
                 viewBox="0 0 99 33"
                 width="99"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="m24.1255 11.7859h-11.4507v3.4008h8.1208c-.4012 4.7689-4.3652 6.8026-8.1071 6.8026-4.78732 0-8.96472-3.7699-8.96472-9.054 0-5.14751 3.98216-9.11181 8.97532-9.11181 3.8522 0 6.1222 2.45792 6.1222 2.45792l2.3791-2.46586s-3.0537-3.402464-8.6229-3.402464c-7.09115 0-12.5775 5.990774-12.5775 12.461614 0 6.3406 5.16087 12.5237 12.7585 12.5237 6.6826 0 11.5743-4.5819 11.5743-11.357 0-1.4294-.2073-2.2555-.2073-2.2555z"></path>
                 <path d="m33.5056 9.32324c-4.6985 0-8.0656 3.67646-8.0656 7.96436 0 4.3513 3.2659 8.0961 8.1208 8.0961 4.395 0 7.9956-3.3621 7.9956-8.0026 0-5.3186-4.1883-8.05786-8.0508-8.05786zm.0467 3.15426c2.3106 0 4.5 1.8696 4.5 4.8824 0 2.9487-2.1802 4.8717-4.5106 4.8717-2.5607 0-4.5807-2.0527-4.5807-4.8951 0-2.7815 1.995-4.859 4.5913-4.859z"></path>
@@ -135,7 +142,6 @@ function App() {
                 height="39"
                 viewBox="0 0 102 39"
                 width="102"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="m78.1174 20.5241c.5087-.0181 1.7596.1451 4.4707.2479 2.8367.1088 3.3993-2.1101 3.2856-3.4825-2.8906.6288-3.5789.792-6.0745.792-2.6214 0-5.8471.7376-5.907 3.0653-.0598 2.3096 2.9325 2.8295 4.4886 3.2709.4309.1027.5925.4534.3052.6832-.6643.538-2.1665 1.2454-2.346 2.509-.2514 1.7896 1.3585 3.1923 3.4053 3.1499 2.7231-.0544 5.7274-1.2273 8.618-4.7279.814-.9915 1.7296-2.6602 2.2982-3.3978.1376-.266.5267-.393.6942-.3748.5147.1148 1.2449.5078 1.1491 1.0761-.1496.8646-2.4837 3.5671-.9276 5.1935.9575.9976 3.3634 1.7231 5.2785.3144 1.7954-1.318 1.161-2.5212.4489-2.6119-.5087-.0604-1.9271 1.7413-3.0762.4535-.9516-1.0641 1.3107-3.2709 1.7655-4.0629.6523-1.1366-1.8852-1.9891-2.9505-3.3978-.6882-.925 1.0952-3.7726-1.1371-4.5223-.7301-.2479-2.9864 1.1245-2.1844 5.0664-1.0234 3.8936-8.8335 10.7074-9.8749 7.9625-.2513-.6711.419-1.7835 2.2084-2.1584 2.9565-.6227 2.7231-2.4667 1.3107-2.6541-2.2144-.2902-2.8308-.2902-5.4701-.913-1.0353-.1088-.9994-1.5054.2214-1.4812z"></path>
                 <path d="m35.4794 25.0181c-.711.7163-1.5294 1.713-1.637 2.5129-.2389 1.7369.6572 3.2709 2.8676 3.2291 2.3718-.0418 3.1544-1.7608 7.1213-4.1722 1.1112-.6745 2.4852-1.8145 3.0528-1.904.221 0 .5377.0656.5138.4834-.3346 1.5818-.705 2.6442-.2928 3.9991.2868.9491 1.5473 1.5459 2.4554.8595 1.5175-1.146 1.5354-1.7966 3.5009-4.3751.3226-.4298 1.5174-2.3875 2.0671-2.1249.46.2149.3285.8535.2449 1.349-.4122 2.4173-1.4637 6.2314 3.3157 5.6464 1.1351-.1372 2.0491-.9072 1.1888-1.719-.5197-.4894-1.1052-.1373-1.7624-.2865-1.5353-.3521 2.2583-7.3356.4481-8.6309-2.545-1.8204-4.9048 1.4087-6.6732 3.7604-.6989.9311-1.2127.5193-1.6668-.7879-.5018-1.4564-3.5307-.3939-5.2692.5014-2.772 1.4265-7.8919 6.2075-8.3638 3.826-.0837-.4119.5854-1.3311 1.8281-1.7847 1.4577-.5312 3.1125-1.0028 3.1125-1.8802 0-.6804-.4122-1.1579-.8483-1.134-2.0372.1134-4.409.6506-7.1212-.0955-.6154-.006-.8842-1.5579.9498-1.355.484.0538 1.5653.1254 5.6695.209 2.8915.0596 2.9513-2.1011 2.563-3.253-2.4016.7162-3.6264.6327-6.1714.6327-2.6704 0-6.2609.37-6.1115 2.9366.1314 2.1607 3.1663 2.7576 4.7375 2.9307.466-.0299.6034.3999.2808.6267z"></path>
@@ -158,7 +164,6 @@ function App() {
                 height="22"
                 viewBox="0 0 155 22"
                 width="155"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="m55.7463 9.82409v-.03366c0-2.9625-2.2265-5.52944-5.5451-5.52944-3.3185 0-5.5707 2.59218-5.5707 5.5631v.03367c0 2.96254 2.2266 5.52944 5.5451 5.52944 1.3564 0 2.5252-.4292 3.438-1.153l1.4332 1.2877.8446-.909-1.4503-1.1867c.836-.9763 1.3052-2.2555 1.3052-3.60211zm-2.2265 2.81101-2.0048-1.8011-.8275.909 2.0218 1.7085c-.6654.5049-1.5441.8079-2.5081.8079-2.491 0-4.2996-1.9946-4.2996-4.43531v-.03366c0-2.4407 1.7744-4.41009 4.2655-4.41009 2.491 0 4.2996 1.99464 4.2996 4.43534v.03366c0 1.06046-.3583 2.02826-.9469 2.78576z"></path>
                 <path d="m65.9548 10.7069c0 2.4205-1.2474 3.6524-3.2015 3.6524-2.0374 0-3.2514-1.3447-3.2514-3.7305v-6.36781h-1.1975v6.44591c0 3.1319 1.7879 4.815 4.4156 4.815 2.6527 0 4.4322-1.6744 4.4322-4.9104v-6.35051h-1.1974z"></path>
@@ -184,7 +189,6 @@ function App() {
                 fill="currentColor"
                 viewBox="0 0 99 28"
                 width="99"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="m51.1596 8.88905 3.6558-.13637-3.0683 10.10722h6.5615l3.0683-10.10722 3.5719.13637 1.4581-4.79921h-13.7892z"></path>
                 <path d="m37.5803 11.5166c-.9179 4.7416-5.9426 7.5791-11.4499 7.5791s-9.4306-2.8428-8.5179-7.5791c.8969-4.64181 5.9793-7.65771 11.4656-7.65771 5.4811 0 9.3991 3.0159 8.5022 7.65771zm-13.3748.0787c-.3252 1.6837.8392 2.8428 2.827 2.8428 1.9879 0 3.5981-1.1539 3.9233-2.8428.3042-1.5683-.7343-2.87951-2.8166-2.87951-2.0822 0-3.6295 1.31121-3.9337 2.87951z"></path>
@@ -210,8 +214,8 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="feachers">
+      </section>
+      <section id="feachers">
         <div className="feachers-container">
           <div className="feachers-container-row1">
             <h2>Features to help your team succeed</h2>
@@ -294,112 +298,115 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-      <hr />
-      <div className="check-out">
+      </section>
+      <section id="cheak-out">
         <div className="check-out-container-row">
           <div className="check-out-container-col1">
-            <div className="check-out-container-col1-col1">
+            <div className="check-out-container-img">
               <img src={tag}></img>
             </div>
-            <div className="check-out-container-col1-col2">
+            <div className="check-out-container-text">
               <h3>See our pricing</h3>
               <p>
                 Whether you’re a team of 2 or 2,000, there’s a Trello
                 tailor-made for your organization.
               </p>
               <p>
-                <a href="/pricing">Trello pricing</a>
+                <a className="check-out-container-btn" href="/pricing">
+                  Trello pricing
+                </a>
               </p>
             </div>
           </div>
           <div className="check-out-container-col2">
-            <div className="check-out-container-col2-col1">
+            <div className="check-out-container-img">
               <img src={compass}></img>
             </div>
-            <div className="check-out-container-col2-col2">
+            <div className="check-out-container-text">
               <h3>Take a Trello tour</h3>
               <p>
                 Explore the world of boards and beyond in Trello. Dive deeper
                 into our most popular features.
               </p>
               <p>
-                <a href="/tour">Tour Trello</a>
+                <a className="check-out-container-btn" href="/tour">
+                  Tour Trello
+                </a>
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <hr />
-      <div className="customer-stories">
-        <div className="frame">
-          <div className="frame-col1">
-            <div>eBay</div>
-            <h5>Industry</h5>
-            <h3>eCommerce</h3>
-          </div>
-          <div className="frame-col2">
-            <svg
-              role="img"
-              aria-label="Quote"
-              fill="none"
-              height="41"
-              viewBox="0 0 55 41"
-              width="55"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="m53.76 28.32c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12zm-27.84 0c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12z"></path>
-            </svg>
-            Everyone loves it; it has democratized our finance function. In some
-            ways Trello shattered hierarchy and brought us together.
-            <div className="frame-col2-footer">
-              <h5>Bharath Sundar</h5>
-              Finance, eBay
+      </section>
+      <section id="customer-stories">
+        <div className="customer-stories-container">
+          <div className="frame">
+            <div className="frame-col1">
+              <div>eBay</div>
+              <h5>Industry</h5>
+              <h3>eCommerce</h3>
+            </div>
+            <div className="frame-col2">
+              <svg
+                role="img"
+                aria-label="Quote"
+                fill="none"
+                height="41"
+                viewBox="0 0 55 41"
+                width="55"
+              >
+                <path d="m53.76 28.32c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12zm-27.84 0c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12z"></path>
+              </svg>
+              Everyone loves it; it has democratized our finance function. In
+              some ways Trello shattered hierarchy and brought us together.
+              <div className="frame-col2-footer">
+                <h5>Bharath Sundar</h5>
+                Finance, eBay
+              </div>
             </div>
           </div>
-        </div>
-        <hr />
+          <hr />
 
-        <ul>
-          <li className="arrow" data-direction="back">
-            <svg
-              role="img"
-              aria-label="Go back"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-              ></path>
-            </svg>
-          </li>
-          <li className="dot"></li>
-          <li className="dot"></li>
-          <li className="dot"></li>
-          <li className="dot"></li>
-          <li className="arrow" data-direction="next">
-            <svg
-              role="img"
-              aria-label="Go next"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-              ></path>
-            </svg>
-          </li>
-        </ul>
-      </div>
-      <div className="sign-up">
+          <ul>
+            <li className="arrow" data-direction="back">
+              <svg
+                role="img"
+                aria-label="Go back"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                ></path>
+              </svg>
+            </li>
+            <li className="dot"></li>
+            <li className="dot"></li>
+            <li className="dot"></li>
+            <li className="dot"></li>
+            <li className="arrow" data-direction="next">
+              <svg
+                role="img"
+                aria-label="Go next"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="sign-up">
         <div className="sign-up-container">
           <div className="sign-up-container-inner-text">
             <div className="inner-text-row1">
@@ -414,12 +421,10 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="app">
+      </section>
+      <section id="app">
         <div className="app-container">
-          <p class="mb-2 mb-lg-0">
-            Trello also works great on your smaller screen.
-          </p>
+          <p>Trello also works great on your smaller screen.</p>
           <div className="app-apple-google">
             <a
               href="https://apps.apple.com/app/trello-organize-anything/id461504587"
@@ -435,162 +440,168 @@ function App() {
             </a>
           </div>
         </div>
-      </div>
-      <div className="footer">
-        <div className="select-container">
-          <select>
-            <option value="choose-one" id="choose" disabled="true">
-              Select your language…
-            </option>
-            <option value="cs" data-url="https://trello.com/cs">
-              Čeština
-            </option>
-            <option value="de" data-url="https://trello.com/de">
-              Deutsch
-            </option>
-            <option value="en" data-url="https://trello.com/en">
-              English
-            </option>
-            <option value="en-AU" data-url="https://trello.com/en-AU">
-              English
-            </option>
-            <option value="en-GB" data-url="https://trello.com/en-GB">
-              English (UK)
-            </option>
-            <option value="en-US" data-url="https://trello.com/en-US">
-              English
-            </option>
-            <option value="es" data-url="https://trello.com/es">
-              Español
-            </option>
-            <option value="fr" data-url="https://trello.com/fr">
-              Français
-            </option>
-            <option value="it" data-url="https://trello.com/it">
-              Italiano
-            </option>
-            <option value="hu" data-url="https://trello.com/hu">
-              Magyar
-            </option>
-            <option value="nl" data-url="https://trello.com/nl">
-              Nederlands
-            </option>
-            <option value="nb" data-url="https://trello.com/nb">
-              Norsk (bokmål)
-            </option>
-            <option value="pl" data-url="https://trello.com/pl">
-              Polski
-            </option>
-            <option value="pt-BR" data-url="https://trello.com/pt-BR">
-              Português (Brasil)
-            </option>
-            <option value="fi" data-url="https://trello.com/fi">
-              Suomi
-            </option>
-            <option value="sv" data-url="https://trello.com/sv">
-              Svenska
-            </option>
-            <option value="vi" data-url="https://trello.com/vi">
-              Tiếng Việt
-            </option>
-            <option value="tr" data-url="https://trello.com/tr">
-              Türkçe
-            </option>
-            <option value="ru" data-url="https://trello.com/ru">
-              Русский
-            </option>
-            <option value="uk" data-url="https://trello.com/uk">
-              Українська
-            </option>
-            <option value="th" data-url="https://trello.com/th">
-              ภาษาไทย
-            </option>
-            <option value="zh-Hans" data-url="https://trello.com/zh-Hans">
-              中文 (简体)
-            </option>
-            <option value="zh-Hant" data-url="https://trello.com/zh-Hant">
-              中文 (繁體)
-            </option>
-            <option value="ja" data-url="https://trello.com/ja">
-              日本語
-            </option>
-          </select>
+      </section>
+      <footer>
+        <div className="footer-container">
+          <div className="select-container">
+            <select>
+              <option value="choose-one" id="choose" disabled="true">
+                Select your language…
+              </option>
+              <option value="en" data-url="https://trello.com/en">
+                English
+              </option>
+              <option value="cs" data-url="https://trello.com/cs">
+                Čeština
+              </option>
+              <option value="de" data-url="https://trello.com/de">
+                Deutsch
+              </option>
+              <option value="en-AU" data-url="https://trello.com/en-AU">
+                English
+              </option>
+              <option value="en-GB" data-url="https://trello.com/en-GB">
+                English (UK)
+              </option>
+              <option value="en-US" data-url="https://trello.com/en-US">
+                English
+              </option>
+              <option value="es" data-url="https://trello.com/es">
+                Español
+              </option>
+              <option value="fr" data-url="https://trello.com/fr">
+                Français
+              </option>
+              <option value="it" data-url="https://trello.com/it">
+                Italiano
+              </option>
+              <option value="hu" data-url="https://trello.com/hu">
+                Magyar
+              </option>
+              <option value="nl" data-url="https://trello.com/nl">
+                Nederlands
+              </option>
+              <option value="nb" data-url="https://trello.com/nb">
+                Norsk (bokmål)
+              </option>
+              <option value="pl" data-url="https://trello.com/pl">
+                Polski
+              </option>
+              <option value="pt-BR" data-url="https://trello.com/pt-BR">
+                Português (Brasil)
+              </option>
+              <option value="fi" data-url="https://trello.com/fi">
+                Suomi
+              </option>
+              <option value="sv" data-url="https://trello.com/sv">
+                Svenska
+              </option>
+              <option value="vi" data-url="https://trello.com/vi">
+                Tiếng Việt
+              </option>
+              <option value="tr" data-url="https://trello.com/tr">
+                Türkçe
+              </option>
+              <option value="ru" data-url="https://trello.com/ru">
+                Русский
+              </option>
+              <option value="uk" data-url="https://trello.com/uk">
+                Українська
+              </option>
+              <option value="th" data-url="https://trello.com/th">
+                ภาษาไทย
+              </option>
+              <option value="zh-Hans" data-url="https://trello.com/zh-Hans">
+                中文 (简体)
+              </option>
+              <option value="zh-Hant" data-url="https://trello.com/zh-Hant">
+                中文 (繁體)
+              </option>
+              <option value="ja" data-url="https://trello.com/ja">
+                日本語
+              </option>
+            </select>
+          </div>
+          <ul class="global-footer-list">
+            <li class="global-footer-list-item">
+              <a class="global-footer-list-item-link " href="/templates">
+                Templates
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a class="global-footer-list-item-link " href="/pricing">
+                Pricing
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a class="global-footer-list-item-link " href="/platforms">
+                Apps
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a
+                class="global-footer-list-item-link "
+                href="https://www.atlassian.com/company/careers/trello"
+              >
+                Jobs
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a
+                class="global-footer-list-item-link"
+                target="_blank"
+                href="https://blog.trello.com/"
+              >
+                Blog
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a
+                class="global-footer-list-item-link "
+                href="http://developers.trello.com"
+              >
+                Developers
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a class="global-footer-list-item-link " href="/about">
+                About
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a
+                class="global-footer-list-item-link "
+                href="http://help.trello.com/"
+              >
+                Help
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a class="global-footer-list-item-link " href="/legal">
+                Legal
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a class="global-footer-list-item-link " href="#">
+                Cookie Settings
+              </a>
+            </li>
+            <li class="global-footer-list-item">
+              <a class="global-footer-list-item-link " href="/privacy">
+                Privacy
+              </a>
+            </li>
+          </ul>
+          <p className="global-footer-detail">
+            <img
+              className="global-footer-detail-img"
+              src={atlassianlogo}
+              alt="atlassianlogo"
+            ></img>
+            <p> &nbsp;© Copyright 2021. All rights reserved.</p>
+          </p>
         </div>
-        <ul class="global-footer-list">
-          <li class="global-footer-list-item">
-            <a class="global-footer-list-item-link quiet" href="/templates">
-              Templates
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a class="global-footer-list-item-link quiet" href="/pricing">
-              Pricing
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a class="global-footer-list-item-link quiet" href="/platforms">
-              Apps
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a
-              class="global-footer-list-item-link quiet"
-              href="https://www.atlassian.com/company/careers/trello"
-            >
-              Jobs
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a
-              class="global-footer-list-item-link quiet"
-              target="_blank"
-              data-analytics-link="blogFooterLink"
-            >
-              Blog
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a
-              class="global-footer-list-item-link quiet"
-              href="http://developers.trello.com"
-            >
-              Developers
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a class="global-footer-list-item-link quiet" href="/about">
-              About
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a
-              class="global-footer-list-item-link quiet"
-              href="http://help.trello.com/"
-            >
-              Help
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a class="global-footer-list-item-link quiet" href="/legal">
-              Legal
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a class="global-footer-list-item-link quiet" href="#">
-              Cookie Settings
-            </a>
-          </li>
-          <li class="global-footer-list-item">
-            <a class="global-footer-list-item-link quiet" href="/privacy">
-              Privacy
-            </a>
-          </li>
-        </ul>
-        <p>
-          <img src={atlassianlogo}></img>
-          &nbsp;© Copyright 2021. All rights reserved.
-        </p>
-      </div>
+      </footer>
     </div>
   );
 }
