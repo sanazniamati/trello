@@ -10,6 +10,7 @@ import compass from "./images/compass.svg";
 import apple from "./images/apple.svg";
 import google from "./images/google.svg";
 import atlassianlogo from "./images/atlassian-logo.svg";
+import ebay from "./images/ebay.svg";
 
 function App() {
   return (
@@ -341,31 +342,36 @@ function App() {
         <div className="customer-stories-container">
           <div className="frame">
             <div className="frame-col1">
-              <div>eBay</div>
-              <h5>Industry</h5>
-              <h3>eCommerce</h3>
+              <div className="logo-ebay">
+                <img src={ebay}></img>
+              </div>
+              <div className="frame-col1-footer">
+                <h5>Industry</h5>
+                <h3>eCommerce</h3>
+              </div>
             </div>
             <div className="frame-col2">
-              <svg
-                role="img"
-                aria-label="Quote"
-                fill="none"
-                height="41"
-                viewBox="0 0 55 41"
-                width="55"
-              >
-                <path d="m53.76 28.32c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12zm-27.84 0c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12z"></path>
-              </svg>
-              Everyone loves it; it has democratized our finance function. In
-              some ways Trello shattered hierarchy and brought us together.
+              <blockquote>
+                <svg
+                  role="img"
+                  aria-label="Quote"
+                  fill="none"
+                  height="41"
+                  viewBox="0 0 55 41"
+                  width="55"
+                >
+                  <path d="m53.76 28.32c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12zm-27.84 0c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12z"></path>
+                </svg>
+                Everyone loves it; it has democratized our finance function. In
+                some ways Trello shattered hierarchy and brought us together.
+              </blockquote>
               <div className="frame-col2-footer">
-                <h5>Bharath Sundar</h5>
-                Finance, eBay
+                <span>
+                  <h5>Bharath Sundar</h5>" Finance, eBay "
+                </span>
               </div>
             </div>
           </div>
-          <hr />
-
           <ul>
             <li className="arrow" data-direction="back">
               <svg
