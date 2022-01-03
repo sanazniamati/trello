@@ -1,0 +1,27 @@
+.global-footer-list {
+  list-style-type: none;
+}
+.global-footer-list-item {
+  box-sizing: border-box;
+  margin: 0 6.4px;
+  display: inline-block;
+}
+.global-footer-list-item-link {
+  color: #8993a4;
+  text-decoration: underline;
+  background-color: transparent;
+  font-size: 15px;
+}
+.global-footer-detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+.global-footer-detail-img {
+  box-sizing: border-box;
+  /* margin: 0 572px; */
+  width: 150px;
+  height: 18.6px;
+  margin-bottom: 20px;
+}
