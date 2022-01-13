@@ -1,6 +1,6 @@
 import "./App.css";
-import Home from "./component/Home.js";
-import About from "./component/About.js";
+import Home from "./component/Home/Home.js";
+import About from "./component/About/About.js";
 import Pricing from "./component/Pricing/Pricing.js";
 import { Routes, Route } from "react-router-dom";
 

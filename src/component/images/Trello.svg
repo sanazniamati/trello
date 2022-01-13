@@ -1,12 +1,4 @@
-import React from "react";
-import "./Header.css";
-
-export default function Header() {
-  return (
-    <header>
-      <div className="header-logo">
-        <a href="/home">
-          <svg
+ <svg
             role="img"
             alt="Trello"
             aria-label="Trello"
@@ -41,20 +33,3 @@ export default function Header() {
               </g>
             </g>
           </svg>
-        </a>
-      </div>
-      <div className="header-sign-in-sign-up">
-        <div className="header-sign-in">
-          <a href="/login">
-            <span>Log in</span>
-          </a>
-        </div>
-        <div className="header-sign-up">
-          <a href="/sign up">
-            <spa>Sign up</spa>
-          </a>
-        </div>
-      </div>
-    </header>
-  );
-}

@@ -1,51 +1,16 @@
 import React from "react";
-import "./Home.css";
-import trelloimg from "../images/trello.png";
 import board from "../images/board.png";
-import view from "../images/view.svg";
-import cardback from "../images/card-back.svg";
-import automation from "../images/automation.png";
-import powerups from "../images/power-ups.png";
-import tag from "../images/tag.svg";
-import compass from "../images/compass.svg";
-import apple from "../images/apple.svg";
-import google from "../images/google.svg";
-import ebay from "../images/ebay.svg";
-import Header from "./Header.js";
-import Footer from "./Footer.js";
-
-export default function Home() {
+import "./Products.css";
+export default function Products() {
+  function MouseOver(event) {
+    event.target.style.background = "rgba(76, 154, 255, 0.1)";
+  }
+  function MouseOut(event) {
+    event.target.style.background = "";
+    // document.getElementById("h-6").style.margin = "0px";
+  }
   return (
     <div>
-      <Header />
-      <section id="content">
-        <div className="content-container">
-          <div className="left-content">
-            <h1>Trello helps teams move to work forward </h1>
-            <p>
-              Collaborate, manage projects, and reach new productivity peaks.
-              From high rises to the home office, the way your team works is
-              unique—accomplish it all with Trello.
-            </p>
-            <form className="input-button">
-              <input
-                className="email"
-                name="email"
-                type="email"
-                placeholder="Email"
-              />
-              <div className="btn-control">
-                <button className="submit" type="submit">
-                  Sign Up-it's free
-                </button>
-              </div>
-            </form>
-          </div>
-          <div className="right-content">
-            <img src={trelloimg} alt="Trello" />
-          </div>
-        </div>
-      </section>
       <section id="products">
         <div className="products-container">
           <div className="products-row1">
@@ -56,8 +21,8 @@ export default function Home() {
               with more features as your teamwork grows. Manage projects,
               organize tasks, and build team spirit—all in one place.
             </p>
-            <p>
-              <a href="/signup" className="products-row1-btn">
+            <p className="products-row1-btn">
+              <a onMouseOver={MouseOver} onMouseOut={MouseOut} href="/about">
                 Start doing →
               </a>
             </p>
@@ -166,238 +131,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="feachers">
-        <div className="feachers-container">
-          <div className="feachers-container-row1">
-            <h2>Features to help your team succeed</h2>
-            <p>
-              Powering a productive team means using a powerful tool (and plenty
-              of snacks). From meetings and projects to events and goal setting,
-              Trello’s intuitive features give any team the ability to quickly
-              set up and customize workflows for just about anything.
-            </p>
-          </div>
-          <div className="feachers-container-row2">
-            <div className="feachers-container-row2-col1">
-              <img src={view} alt="view"></img>
-            </div>
-            <div className="feachers-container-row2-col2">
-              <p>CHOOSE A VIEW</p>
-              <h2>The board is just the beginning</h2>
-              <p>
-                Lists and cards are the building blocks of organizing work on a
-                Trello board. Grow from there with task assignments, timelines,
-                productivity metrics, calendars, and more.
-              </p>
-              <h3>
-                <a href="/learn more"> Learn more</a>
-              </h3>
-            </div>
-          </div>
-          <div className="feachers-container-row3">
-            <div className="feachers-container-row3-col1">
-              <p>DIVE INTO THE DETAILS</p>
-              <h2>Cards contain everything you need</h2>
-              <p>
-                Trello cards are your portal to more organized work—where every
-                single part of your task can be managed, tracked, and shared
-                with teammates. Open any card to uncover an ecosystem of
-                checklists, due dates, attachments, conversations, and more.
-              </p>
-              <h3>
-                <a href="/learn more">Learn more</a>
-              </h3>
-            </div>
-            <div className="feachers-container-row3-col2">
-              <img src={cardback} alt="card-back"></img>
-            </div>
-          </div>
-          <div className="feachers-container-row4">
-            <div className="feachers-container-row4-col1">
-              <img src={automation} alt="automation"></img>
-            </div>
-            <div className="feachers-container-row4-col2">
-              <h5>Meet your new Butler</h5>
-              <h2>No-code automation</h2>
-              <p>
-                Let the robots do the work—so your team can focus on work that
-                matters. With Trello’s built-in automation, Butler, reduce the
-                number of tedious tasks (and clicks) on your project board by
-                harnessing the power of automation across your entire team.
-              </p>
-              <h3>
-                <a href="/learn more">Learn more</a>
-              </h3>
-            </div>
-          </div>
-          <div className="feachers-container-row5">
-            <div className="feachers-container-row5-col1">
-              <h5>Power-Ups</h5>
-              <h2>Integrate top work tools</h2>
-              <p>
-                Easily connect the apps your team already uses into your Trello
-                workflow, or add a Power-Up that helps fine-tune one specific
-                need. With hundreds of Power-Ups available, your team’s workflow
-                wishes are covered.
-              </p>
-              <h3>
-                <a href="/learn more">Learn more</a>
-              </h3>
-            </div>
-            <div className="feachers-container-row5-col2">
-              <img src={powerups} alt="power-ups"></img>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="cheak-out">
-        <div className="check-out-container-row">
-          <div className="check-out-container-col1">
-            <div className="check-out-container-img">
-              <img src={tag} alt="tag"></img>
-            </div>
-            <div className="check-out-container-text">
-              <h3>See our pricing</h3>
-              <p>
-                Whether you’re a team of 2 or 2,000, there’s a Trello
-                tailor-made for your organization.
-              </p>
-              <p>
-                <a className="check-out-container-btn" href="/pricing">
-                  Trello pricing
-                </a>
-              </p>
-            </div>
-          </div>
-          <div className="check-out-container-col2">
-            <div className="check-out-container-img">
-              <img src={compass} tag="compass" alt="compass"></img>
-            </div>
-            <div className="check-out-container-text">
-              <h3>Take a Trello tour</h3>
-              <p>
-                Explore the world of boards and beyond in Trello. Dive deeper
-                into our most popular features.
-              </p>
-              <p>
-                <a className="check-out-container-btn" href="/tour">
-                  Tour Trello
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="customer-stories">
-        <div className="customer-stories-container">
-          <div className="frame">
-            <div className="frame-col1">
-              <div className="logo-ebay">
-                <img src={ebay} alt="ebay"></img>
-              </div>
-              <div className="frame-col1-footer">
-                <h5>Industry</h5>
-                <h3>eCommerce</h3>
-              </div>
-            </div>
-            <div className="frame-col2">
-              <blockquote>
-                <svg
-                  role="img"
-                  aria-label="Quote"
-                  fill="none"
-                  height="41"
-                  viewBox="0 0 55 41"
-                  width="55"
-                >
-                  <path d="m53.76 28.32c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12zm-27.84 0c0-7.32-3.84-11.4-11.64-11.52 1.68-2.64 6.36-4.08 12.6-4.44v-12.36c-17.28.960002-26.88 10.2-26.88 24.24 0 11.4 5.64 16.08 13.2 16.08 7.92 0 12.72-4.68 12.72-12z"></path>
-                </svg>
-                Everyone loves it; it has democratized our finance function. In
-                some ways Trello shattered hierarchy and brought us together.
-              </blockquote>
-              <div className="frame-col2-footer">
-                <span>
-                  <h5>Bharath Sundar</h5>" Finance, eBay "
-                </span>
-              </div>
-            </div>
-          </div>
-          <ul>
-            <li className="arrow" data-direction="back">
-              <svg
-                role="img"
-                aria-label="Go back"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-                ></path>
-              </svg>
-            </li>
-            <li className="dot"></li>
-            <li className="dot"></li>
-            <li className="dot"></li>
-            <li className="dot"></li>
-            <li className="arrow" data-direction="next">
-              <svg
-                role="img"
-                aria-label="Go next"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                ></path>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="sign-up">
-        <div className="sign-up-container">
-          <div className="sign-up-container-inner-text">
-            <div className="inner-text-row1">
-              <h3>
-                Sign up and get started with Trello today. A world of productive
-                teamwork awaits!
-              </h3>
-            </div>
-            <div className="inner-text-row2">
-              <input type="email" placeholder="email"></input>
-              <button type="submit">Sign Out</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="app">
-        <div className="app-container">
-          <p>Trello also works great on your smaller screen.</p>
-          <div className="app-apple-google">
-            <a
-              href="https://apps.apple.com/app/trello-organize-anything/id461504587"
-              // target="_blank"
-            >
-              <img src={apple} alt="Available on the App Store"></img>
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.trello"
-              // target="_blank"
-            >
-              <img src={google} alt="Get it on Google Play"></img>
-            </a>
-          </div>
-        </div>
-      </section>
-      <Footer />
     </div>
   );
 }

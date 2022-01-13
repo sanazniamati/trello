@@ -1,7 +1,28 @@
+@font-face {
+  font-family: "Charlie_Display";
+  src: local("Charlie_Display"),
+    url(./component/fonts/Charlie_Display-Semibold.woff) format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Charlie_Text";
+  src: local("Charlie_Text"),
+    url(./component/fonts/Charlie_Text-Regular.woff) format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Charlie_Text";
+  src: local("Charlie_Text"),
+    url(./component/fonts/Charlie_Text-Semibold.woff) format("woff");
+  font-weight: 600;
+}
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Charlie_Text";
 }
 .body {
   display: flex;
@@ -9,6 +30,6 @@
   background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255));
   font-family: "Charlie Text", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  /* font-weight: 300; */
   line-height: 1.5;
 }

@@ -42,12 +42,12 @@
   width: 100%;
 }
 
-.eYTUFe {
+.section2-display {
   background-color: rgb(255, 255, 255);
   display: flex;
 }
 
-.ebuVgN {
+.row1 {
   padding: 1.5rem 1rem 0px;
   text-align: left;
   border-left: 1px solid rgb(223, 225, 230);
@@ -55,40 +55,40 @@
   border-top: 1px solid rgb(223, 225, 230);
 }
 
-.janCrL {
+.row2 {
   padding: 1.5rem 1rem 0px;
   font-size: 3rem;
   line-height: 1;
   margin-bottom: 0.5rem;
   text-align: left;
 }
-.janCrL span {
+.row2 span {
   font-size: 1rem;
 }
-.janCrL p {
+.row2 p {
   color: rgb(122, 134, 154);
   font-size: 0.75rem;
 }
 
-.jQhzTH {
+.row3 {
   padding: 1.5rem 1rem 0px;
   text-align: left;
   border-left: 1px solid rgb(223, 225, 230);
   border-right: 1px solid rgb(223, 225, 230);
   height: 167px;
 }
-.jQhzTH p {
+.row3 p {
   font-size: 1rem;
 }
 
-.fzIkNI {
+.row4 {
   padding: 1.5rem 1rem 0px;
   text-align: left;
   border-left: 1px solid rgb(223, 225, 230);
   border-right: 1px solid rgb(223, 225, 230);
 }
 
-.fzIkNI a {
+.row4 a {
   -webkit-box-align: center;
   align-items: center;
   border-radius: 0.3rem;
@@ -103,20 +103,20 @@
   color: rgb(54, 179, 126) !important;
 }
 
-.dxWVxo {
+.row5-container {
   padding: 1.5rem 1rem 0px;
   text-align: left;
   border-left: 1px solid rgb(223, 225, 230);
   border-right: 1px solid rgb(223, 225, 230);
 }
 
-.dYeWK {
+.row5 {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-/* .dYeWK button {
+/* .row5 button {
   background: transparent;
   border: 0px;
   position: relative;
@@ -125,13 +125,13 @@
   outline: none !important;
 } */
 
-.dYeWK ul {
+.row5 ul {
   font-size: 1rem;
   list-style-type: none;
   margin: 0px;
   padding: 0px 0px 0px 1.5rem;
 }
-.dYeWK ul li::before {
+.row5 ul li::before {
   /* background-image: url(
     data:image/svg + xml,
     %3Csvgwidth="14"height="10"viewBox="0 0 14 10"fill="none"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathd="M1.73534 4.3223C1.36105 3.91618 0.728414 3.89038 0.3223 4.26467C-0.0838134 4.63895 -0.109615 5.27159 0.264671 5.6777L3.87678 9.59697C4.41431 10.1231 5.21446 10.1231 5.71114 9.62638C5.7724 9.56623 5.7724 9.56623 6.07539 9.26827C6.36994 8.97855 6.69814 8.65556 7.05157 8.3075C8.06144 7.31303 9.07132 6.31689 10.014 5.38477L10.0543 5.34489C11.7291 3.68869 13.0004 2.42365 13.712 1.70223C14.0998 1.30904 14.0954 0.675886 13.7022 0.288053C13.309 -0.0997796 12.6759 -0.0954305 12.2881 0.297767C11.5843 1.01131 10.3169 2.27244 8.648 3.92281L8.60773 3.96263C7.66616 4.89368 6.65722 5.88889 5.64826 6.88247C5.35784 7.16847 5.08449 7.43752 4.83288 7.68506L1.73534 4.3223Z"fill="rgba(54, 179, 126, 1)"/%3E%3C/svg%3E%0A
