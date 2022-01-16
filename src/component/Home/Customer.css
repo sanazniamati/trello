@@ -10,11 +10,12 @@
   display: flex;
 }
 .frame-col1 {
+  width: 25%;
   padding: 0 15px;
 }
 .logo-ebay img {
-  width: 192px;
-  height: 80px;
+  width: 292px;
+  height: 140px;
   margin-right: 63px;
   margin-bottom: 48px;
 }
@@ -32,6 +33,7 @@
 }
 .frame-col2 {
   padding: 0 15px;
+  width: 75%;
 }
 .frame-col2 blockquote {
   font-size: 32px;

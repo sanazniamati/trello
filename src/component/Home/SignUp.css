@@ -75,12 +75,17 @@
 }
 @media only screen and (max-width: 768px) {
   .sign_up {
-    width: 80%;
-    height: 302px;
+    width: 75%;
+    /* height: 302px; */
   }
+  .sign_up_text {
+    height: 125%;
+  }
+
   .sign_up_text_h3 h3 {
     font-size: 20px;
   }
+
   .btn_signup_email input[type="email"] {
     display: none;
   }
