@@ -1,0 +1,91 @@
+.sign_up_container {
+  width: 100vw;
+  height: 412px;
+  /* margin: 0 104px; */
+  /* padding: 48px 15px; */
+  /* background-color: chartreuse; */
+}
+
+.sign_up {
+  width: 85%;
+  height: 317px;
+  padding: 48px 15px;
+  margin: 0 auto;
+  /* padding: 10px 15px; */
+  color: #ffffff;
+}
+.sign_up_text {
+  width: 100%;
+  height: 317px;
+  padding: 80px 15px;
+  color: #ffffff;
+  background-image: linear-gradient(0deg, #4c9aff, #403294 100%);
+  background-image: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/sign-up/95ae6a1535b6504e3572dc7393a2d482/background.svg),
+    linear-gradient(0deg, #4c9aff, #403294 100%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto; */
+}
+.sign_up_text_h3 {
+  width: 100%;
+  height: 112px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+.sign_up_text_h3 h3 {
+  color: #ffffff;
+  margin: 0px 0px 48px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Charlie Display", sans-serif;
+}
+.btn_signup_email {
+  width: 100%;
+  height: 44px;
+  color: #ffffff;
+  margin: 0px -15px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  gap: 10px;
+}
+.btn_signup_email input[type="email"] {
+  width: 40%;
+  height: 48px;
+  font-size: 22px;
+  padding: 7px 20px;
+  font-family: sans-serif;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  color: #495057;
+}
+.btn_signup_email button[type="submit"] {
+  width: 20%;
+  height: 48px;
+  font-size: 20px;
+  padding: 7px 20px;
+  font-family: sans-serif;
+  border-radius: 5px;
+  border: 1px solid #4c9aff;
+  color: #ffffff;
+  background-color: #4c9aff;
+}
+@media only screen and (max-width: 768px) {
+  .sign_up {
+    width: 80%;
+    height: 302px;
+  }
+  .sign_up_text_h3 h3 {
+    font-size: 20px;
+  }
+  .btn_signup_email input[type="email"] {
+    display: none;
+  }
+  .btn_signup_email button[type="submit"] {
+    margin: 0 auto;
+    width: 90%;
+  }
+}

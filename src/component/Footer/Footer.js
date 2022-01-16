@@ -5,7 +5,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div>
-      <footer>
+      <footer className="Home-footer">
         <div className="footer-container">
           <div className="select-container">
             <select>
@@ -156,14 +156,14 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <p className="global-footer-detail">
+          <div className="global-footer-detail">
             <img
               className="global-footer-detail-img"
               src={atlassianlogo}
               alt="atlassianlogo"
             ></img>
             <p> &nbsp;© Copyright 2021. All rights reserved.</p>
-          </p>
+          </div>
         </div>
       </footer>
     </div>

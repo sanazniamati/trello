@@ -15,7 +15,7 @@ export default function CheakOut() {
   return (
     <div>
       <section id="cheak-out">
-        <div className="check-out-container-row">
+        <div className="check-out-container">
           <div className="check-out-container-col">
             <div className="check-out-container-img">
               <img src={tag} alt="tag"></img>

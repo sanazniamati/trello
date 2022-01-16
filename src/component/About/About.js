@@ -299,7 +299,7 @@ function About() {
           </div>
         </div>
       </section>
-      <footer>
+      <footer className="About-Footer">
         <section id="footer-section1">
           <div className="footer-section1-container">
             <div className="footer-container-col1">

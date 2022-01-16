@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.css";
 import Hero from "./Hero";
 import Products from "./Products";
 import Feachers from "./Feachers";
@@ -8,6 +7,7 @@ import Customer from "./Customer";
 import SignUp from "./SignUp";
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
+import Apps from "./Apps";
 
 export default function Home() {
   return (
@@ -18,8 +18,9 @@ export default function Home() {
       <Feachers />
       <CheakOut />
       <Customer />
-      {/* <SignUp />
-      <Footer /> */}
+      <SignUp />
+      <Apps />
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,43 @@
+.footer-container {
+  width: 100vw;
+  height: 167.61px;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.select-container {
+  margin-bottom: 20px;
+}
+.select-container select {
+  color: #959da1;
+  border: 2px solid #edeff0;
+  font-size: 16px;
+  background-color: #ffffff80;
+  /* appearance: none; */
+  padding: 8px;
+}
+.select-container select::after {
+  background-image: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/3a15a34…/caret.svg);
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 16px;
+  position: absolute;
+  right: 11px;
+  top: 50%;
+}
+
 .global-footer-list {
   list-style-type: none;
+  font-size: 18px;
+  font-family: "charlie Text", sans-serif;
+  margin: 0 0 20px;
+  width: 80%;
+  text-align: center;
+}
+.global-footer-list :hover {
+  color: black;
 }
 .global-footer-list-item {
   box-sizing: border-box;
@@ -15,8 +53,9 @@
 .global-footer-detail {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin: 0 0 24px;
   align-items: center;
+  color: #091e42;
 }
 .global-footer-detail-img {
   box-sizing: border-box;

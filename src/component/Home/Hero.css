@@ -1,7 +1,6 @@
 .hero-container {
-  width: 1366px;
+  width: 100vw;
   height: 767.95px;
-  margin: 0 104.5px;
   padding: 48px 15px 80px;
   /* background-color: lightpink; */
 }
@@ -9,7 +8,8 @@
   display: flex;
   width: 1140px;
   height: 575.95px;
-  margin: 0 -15px;
+  margin: 0 auto;
+  /* margin: 0 -15px; */
   /* background-color: lightslategray; */
 }
 .right-hero {
